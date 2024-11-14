@@ -10,11 +10,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:postgresql://localhost:5432/user_access_managemen"; // Corrected URL
+    private static final String URL = "jdbc:postgresql://localhost:5432/user_access_managemen"; // Database URL
     private static final String USER = "postgres";
     private static final String PASSWORD = "123456789";
 
-    // Load the PostgreSQL driver (optional but recommended)
+    // Load the Database driver 
     static {
         try {
             Class.forName("org.postgresql.Driver");
