@@ -1,10 +1,12 @@
 package useraccessmanagementsystem;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.sql.*;
 
+@WebServlet("/approveRequest")
 public class ApprovalServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String requestIdParam = request.getParameter("request_id");
